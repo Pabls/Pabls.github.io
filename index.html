@@ -3,19 +3,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>P.Semin site</title>
-    <meta name="description" content="Site of p_semin">
-    <meta name="author" content="P.Semin">
+    <title>П.С.</title>
 
-    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            font: 16px Helvetica, Sans-Serif;
+            line-height: 24px;
+            
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #page-wrap {
+            width: 800px;
+            margin: 40px auto 60px;
+        }
+
+        #pic {
+            float: right;
+            margin: -30px 0 0 0;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            padding: 0 0 16px 0;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            border-bottom: 1px solid #999;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
+
+        h2 span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-family: Georgia, Serif;
+            font-size: 16px;
+            color: #999;
+            font-weight: normal;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px dotted #999;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+            color: black;
+        }
+
+        ul {
+            margin: 0 0 32px 17px;
+        }
+
+        #objective {
+            width: 500px;
+            float: left;
+        }
+
+        #objective p {
+            font-family: Georgia, Serif;
+            font-style: italic;
+            color: #666;
+        }
+
+        dt {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 100px;
+            border-right: 1px solid #999;
+        }
+
+        dd {
+            width: 600px;
+            float: right;
+        }
+
+        dd.clear {
+            float: none;
+            margin: 0;
+            height: 15px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <script src="js/scripts.js"></script> -->
-    <h1>P.Semin site</h1>
+
+    <div id="page-wrap">
+
+        <img width="200" src="images/pabls.jpeg" alt="Павел" id="pic" />
+
+        <div id="contact-info" class="vcard">
+
+            <!-- Microformats! -->
+
+            <h1 class="fn">Привет, меня зовут Павел</h1>
+
+            <p>
+                телефон: <span class="tel">+7 925 063-28-63</span><br />
+                Email: <a class="email" href="mailto:pabls@yandex.ru">pabls@yandex.ru</a>
+            </p>
+        </div>
+
+        <!-- <div id="objective">
+            <p>
+                I am an outgoing and energetic (ask anybody) young professional, seeking a
+                career that fits my professional skills, personality, and murderous tendencies.
+                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it.
+                I can bring world domination to your organization.
+            </p>
+        </div> -->
+
+        <div class="clear"></div>
+
+        <dl>
+            <dd class="clear"></dd>
+
+            <dt>Образование</dt>
+            <dd>
+                <h2>Государственный университет «Дубна»</h2>
+                <h3>Институт системного анализа и управления</h3>
+                <p><strong>Специализация:</strong> Прикладная информатика<br />
+                <a href="https://www.uni-dubna.ru/" target="blank">https://www.uni-dubna.ru/</a>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Специализация</dt>
+            <dd>
+                <h2>Программист</h2>
+                <ul>
+                    <li>Разработка мобильных приложений под ОС Android</li>
+                    <li>Разработка клиентской части веб-приложений на AngularJs, Angular</li>
+                    <li>Разработка backend на .net fragmework</li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Работа и проекты</dt>
+            <dd>
+                <h2>Citymobil (сервис такси) <span>Android разработчик</span></h2>
+                <p> Приложение <a href="https://play.google.com/store/apps/details?id=com.citymobil&hl=ru" target="blank">	
+                    Ситимобил – заказ такси</a><br />
+            </dd>
+            <dd>
+                <h2>Ламамаркет (сервис Golama) <span>Android разработчик</span></h2>
+                <p> Сервис завершил свою деятельность в январе 2020 года, все приложения были удалены из play market  :(<br />
+                <p> Приложение сервиса доставки продуктов из магазинов GOLAMAGO<br />
+                <p> Приложение для сборщиков заказов и курьеров<br />
+            </dd>
+            <dd>
+                <h2>Wildberries (маркетплейс)<span>Разработчик ИС</span></h2>
+                <p> Приложение для партнеров-поставщиков <a href="https://play.google.com/store/apps/details?id=com.wildberries.portal" target="blank">	
+                    	WB Партнёры</a><br />
+
+                <p> Разработка серверной части приложения для курьеров компании <a href="https://play.google.com/store/apps/details?id=ru.wb.courier" target="blank">	
+                                WB курьеры</a><br />
+
+                <p> Разработка веб версии CRM системы (Веб клиент + бекенд)<br />	
+                                
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Хобби</dt>
+            <dd>
+                <ul>
+                    <li>Увлекаюсь футболом и всем, что связанно с этим видом спорта</li>
+                    <li>Микроэлектронника и Arduino</li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Альтернативные средства связи</dt>
+            <dd><a href="https://t.me/p_semin" target="blank">https://t.me/p_semin</a></dd>
+
+            <dd class="clear"></dd>
+        </dl>
+
+        <div class="clear"></div>
+
+    </div>
+
 </body>
 
 </html>
